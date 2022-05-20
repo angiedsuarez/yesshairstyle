@@ -43,7 +43,7 @@ body{
       text-align: center;
       margin: 80px;
       font-family: $fonttitulo;
-      border-bottom: solid 2px black;
+      border-bottom: $border-bottom;
     }
     .div-cont{
       display: flex;
@@ -53,7 +53,7 @@ body{
         .p1{
           padding: 15px 25px 25px 25px;
           font-family: $fontbody;
-          color: black;
+          color: map-get($map: $colores, $key: negro);
           font-size: 20px;
           }
           .h2-t{
@@ -61,7 +61,7 @@ body{
             font-family: $fonttitulo;
             font-size: 50px;
             text-align: center;
-            color: black;
+            color: map-get($map: $colores, $key: negro);
           }
         } 
       }
@@ -71,14 +71,14 @@ body{
           @extend .titulo__nosotros;
           margin: 45px 0;
           font-size: 2.5rem;
-          border-bottom: 2px solid black;
+          border-bottom: $border-bottom;
         }
         .descrip-serv{
           font-family: $fontbody;
           padding:  0 50px;
           text-align: center;
           margin-bottom: 50px;
-          color: black;
+          color: map-get($map: $colores, $key: negro);
           font-size: 1.3rem;
         }
         .servicios-cont{
@@ -95,19 +95,19 @@ body{
         }
         p{
           text-align: center;
-          color: white;
+          color: map-get($map: $colores, $key: blanco);
           font-family: $fontbody;
         }
         h6{
           text-align: center;
-          color: white;
+          color: map-get($map: $colores, $key: blanco);
           font-family: $fonttitulo;
         }
         .imagen-corte,
         .imagen-peinados,
         .imagen-color,
         .imagen-tratamientos{
-          background-color: rgb(34, 34, 34);
+          background-color: map-get($map: $colores, $key: girs-oscuro);
         }
     
       .separador-page{
@@ -120,7 +120,7 @@ body{
     .container-galeria{
       .h2-galeria{
         margin: 45px 0;
-        border-bottom: 2px solid black;
+        border-bottom: $border-bottom;
       }
       .img-galeria{
         display: flex;
@@ -142,7 +142,7 @@ body{
       text-align: center;
       font-size: 35px;
       font-family: $fonttitulo;
-      border-bottom: solid black 1px;
+      border-bottom: $border-bottom;
       margin-top: 80px;
     }
     .marcas-tinturas{

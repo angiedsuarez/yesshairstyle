@@ -4,7 +4,7 @@
         font-family: $fonttitulo;
         text-align: center;
         font-size: 50px;
-        border-bottom: solid 1px black;
+        border-bottom: $border-bottom;
         padding: 50px 0 15px 0;
     }
     h3{
@@ -60,13 +60,13 @@
 }    
 .box-conoceme{
     display: flex;
-    background-color: rgb(34, 34, 34);
+    background-color: map-get($map: $colores, $key: girs-oscuro);
     .nosotras-1{
         padding: 25px;
     }
     .quienes-somos{
         margin: 25px;
-        color: white;
+        color: map-get($map: $colores, $key: blanco);
         h3{
             font-size: 25px;
             font-family: $fonttitulo;
@@ -81,7 +81,7 @@
 } 
 .box-mision{
     display: flex;
-    background-color: white;
+    background-color: map-get($map: $colores, $key: blanco);
     .nosotras-2{
         padding: 25px;
     }
@@ -111,7 +111,7 @@
 } 
 .box-valores{
     @extend .box-mision;
-    background-color: white;
+    background-color: map-get($map: $colores, $key: blanco);
     .valores{
         margin: 25px;
         width: 100%;

@@ -17,7 +17,7 @@ main{
             font-family: $fonttitulo;
             text-align: center;
             padding-top: 50px;
-            border-bottom: solid 1px black;
+            border-bottom: $border-bottom
         }
         .contact-form h2{
             font-family: $fonttitulo;
@@ -70,9 +70,9 @@ main{
                 }
             }
             .contact-info{
-                background-color: rgb(34, 34, 34);
+                background-color: map-get($map: $colores, $key: girs-oscuro);
                 font-family: $fontbody;
-                color: white;
+                color: map-get($map: $colores, $key: blanco);
                 & h4,
                 & ul,
                 & p{

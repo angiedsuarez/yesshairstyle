@@ -1,6 +1,6 @@
 .container-turnos{
     margin: 0 40px;
-    background-color: #ffffff;
+    background-color: map-get($map: $colores, $key: blanco);
     .contenido-turno{
         padding: 25px;
         p{
@@ -18,7 +18,7 @@ h1{
     text-align: center;
     font-family: $fonttitulo;
     padding: 50px 0;
-    border-bottom: solid black 1px;
+    border-bottom: $border-bottom;
 }
 .ubicacion-mapa{
     font-family: $fontbody;

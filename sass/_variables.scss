@@ -28,7 +28,7 @@
 /*variables*/
 $fonttitulo: 'Koulen', cursive;
 $fontbody: 'Quicksand', sans-serif;
-$border-bottom: solid  black;
+$border-bottom: solid  black 2px;
 $border-bottom-pink: solid 0.5px #d89289;
 $light-gray: gray;
 $black: black;
@@ -41,4 +41,6 @@ $colores: (
     blanco: #fff,
     gris-claro: #dddddb,
     gris-fuerte: #979797,
+    girs-oscuro: #343434,
+    negro: #000000,
 );
