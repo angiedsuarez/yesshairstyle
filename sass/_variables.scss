@@ -1,0 +1,44 @@
+/* mixin */
+@mixin h3{
+    font-size: 25px;
+    font-family: $fontbody;
+    
+}
+
+@mixin p{
+    font-size: 15px;
+    font-family: $fontbody;
+    padding-bottom: 15px;
+}
+@mixin galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2,400px);
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+@mixin titulo-container{
+    font-family: $fonttitulo;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: $border-bottom
+}
+
+/*variables*/
+$fonttitulo: 'Koulen', cursive;
+$fontbody: 'Quicksand', sans-serif;
+$border-bottom: solid  black;
+$border-bottom-pink: solid 0.5px #d89289;
+$light-gray: gray;
+$black: black;
+
+/*map*/
+$colores: (
+    rosa-fuerte: #cc7d72,
+    rosa-inter: #d89289,
+    rosa-claro: #efcfc6,
+    blanco: #fff,
+    gris-claro: #dddddb,
+    gris-fuerte: #979797,
+);

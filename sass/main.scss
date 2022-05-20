@@ -1,0 +1,219 @@
+@import "variables";
+@import "servicios";
+@import "conocenos";
+@import "contacto";
+@import "reserva-turnos";
+/**GLOBAL**/
+ul {
+  list-style: none;
+}
+body{
+  width: 100%;
+  box-sizing: border-box;
+  header{
+    .nav-logos{
+      display: flex;
+      justify-content: center;
+    }
+    nav{
+      .navbar-collapse{
+        @extend .nav-logos;
+        .navbar-nav{
+          .nav-item{
+            .nav-link{
+              padding: 5px 15px;
+              &:hover{
+                color: map-get($map: $colores, $key: rosa-inter);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-page{
+    img{
+      width: 100%
+    }
+  }
+  main{
+    padding: 0 60px;
+    background-image: url(../img/peluqueria/geometrico6.png);
+    .titulo__nosotros{
+      text-align: center;
+      margin: 80px;
+      font-family: $fonttitulo;
+      border-bottom: solid 2px black;
+    }
+    .div-cont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .texto-cont{
+        .p1{
+          padding: 15px 25px 25px 25px;
+          font-family: $fontbody;
+          color: black;
+          font-size: 20px;
+          }
+          .h2-t{
+            padding: 25px 0px;
+            font-family: $fonttitulo;
+            font-size: 50px;
+            text-align: center;
+            color: black;
+          }
+        } 
+      }
+      
+      .div-servicios{
+        h2{
+          @extend .titulo__nosotros;
+          margin: 45px 0;
+          font-size: 2.5rem;
+          border-bottom: 2px solid black;
+        }
+        .descrip-serv{
+          font-family: $fontbody;
+          padding:  0 50px;
+          text-align: center;
+          margin-bottom: 50px;
+          color: black;
+          font-size: 1.3rem;
+        }
+        .servicios-cont{
+          display: flex;
+          justify-content: space-between;
+          img{
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+            padding: 10px;
+          }
+          img:hover{
+            transform: scale(1.1);
+          }
+        }
+        p{
+          text-align: center;
+          color: white;
+          font-family: $fontbody;
+        }
+        h6{
+          text-align: center;
+          color: white;
+          font-family: $fonttitulo;
+        }
+        .imagen-corte,
+        .imagen-peinados,
+        .imagen-color,
+        .imagen-tratamientos{
+          background-color: rgb(34, 34, 34);
+        }
+    
+      .separador-page{
+        img{
+          margin-top: 80px;
+          width: 100%;
+        }
+      }
+    }
+    .container-galeria{
+      .h2-galeria{
+        margin: 45px 0;
+        border-bottom: 2px solid black;
+      }
+      .img-galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        img{
+          margin-top: 15px;
+          transform: scale(1);
+            transition: 0.3s ease-in-out;
+            padding: 10px;
+          }
+          img:hover{
+            transform: scale(1.1);
+        }
+      }
+    }
+    .marca-h3{
+      text-align: center;
+      font-size: 35px;
+      font-family: $fonttitulo;
+      border-bottom: solid black 1px;
+      margin-top: 80px;
+    }
+    .marcas-tinturas{
+      display: flex;
+      justify-content: center;
+      .alparf-png,
+      .revlon-png,
+      .loreal-png,
+      .schwar-png,
+      .koleston-png,
+      .wella-png{
+        justify-self: center;
+        width: 200px;
+        padding: 0 25px;
+        margin-bottom: 60px;
+        margin-top: 45px;
+      }
+    }
+  }
+}
+footer{
+  background-color: map-get($map: $colores, $key: gris-claro);
+  iframe {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*media queries*/
+
+/*talet*/
+@media (max-width: 768px){
+  .div-cont{
+    flex-direction: column;
+    background-color: map-get($map: $colores, $key: blanco);
+  }
+  .servicios-cont{
+    display: flex;
+    flex-direction: column;
+  }
+  .separador-page{
+    & img{
+      width: 700px;
+      justify-content: center;
+    }
+  }
+  .imagenes.png {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2rem;
+    gap: 10px;
+  }
+}
+
+/*mobile*/
+@media (max-width: 576px){
+  .alparf-png,
+  .revlon-png,
+  .loreal-png,
+  .schwar-png,
+  .koleston-png,
+  .wella-png{
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-corte img,
+  .imagen-peinados img,
+  .imagen-color img,
+  .imagen-tratamientos img{
+    width: 100%;
+  }
+}

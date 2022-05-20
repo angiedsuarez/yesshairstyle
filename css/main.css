@@ -1,0 +1,668 @@
+/* mixin */
+/*variables*/
+/*map*/
+body {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body main .titulo__servicios {
+  font-family: "Koulen", cursive;
+  margin: 50px;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+
+body main .parrafo-servicios {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body main .card {
+  width: 100%;
+}
+
+body main .card-title {
+  font-family: "Koulen", cursive;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: solid 1px black;
+}
+
+body main .card-text {
+  font-family: "Quicksand", sans-serif;
+}
+
+body main .p-aclaracion {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 50px;
+}
+
+.container-conoceme {
+  margin-bottom: 80px;
+}
+
+.container-conoceme h1 {
+  font-family: "Koulen", cursive;
+  text-align: center;
+  font-size: 50px;
+  border-bottom: solid 1px black;
+  padding: 50px 0 15px 0;
+}
+
+.container-conoceme h3 {
+  font-family: "Koulen", cursive;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container-conoceme .logo-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px 0;
+}
+
+.container-conoceme .logo-perfil .perfil1 .perfil-p1, .container-conoceme .logo-perfil .perfil3 .perfil-p1, .container-conoceme .logo-perfil .perfil4 .perfil-p1, .container-conoceme .logo-perfil .perfil3 .perfil3-p1, .container-conoceme .logo-perfil .perfil4 .perfil4-p1 {
+  padding-top: 15px;
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+.container-conoceme .logo-perfil .perfil1 .perfil-p2, .container-conoceme .logo-perfil .perfil3 .perfil-p2, .container-conoceme .logo-perfil .perfil4 .perfil-p2, .container-conoceme .logo-perfil .perfil3 .perfil3-p2, .container-conoceme .logo-perfil .perfil4 .perfil4-p2 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.container-conoceme .logo-perfil .perfil2 .perfil2-p1 {
+  padding-top: 15px;
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+.container-conoceme .logo-perfil .perfil2 .perfil2-p2 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.box-conoceme, .box-vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #222222;
+}
+
+.box-conoceme .nosotras-1, .box-vision .nosotras-1 {
+  padding: 25px;
+}
+
+.box-conoceme .quienes-somos, .box-vision .quienes-somos, .box-vision .vision {
+  margin: 25px;
+  color: white;
+}
+
+.box-conoceme .quienes-somos h3, .box-vision .quienes-somos h3, .box-vision .vision h3 {
+  font-size: 25px;
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+.box-conoceme .quienes-somos p, .box-vision .quienes-somos p, .box-vision .vision p {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+}
+
+.box-mision, .box-valores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.box-mision .nosotras-2, .box-valores .nosotras-2 {
+  padding: 25px;
+}
+
+.box-mision .mision, .box-valores .mision {
+  margin: 25px;
+  width: 100%;
+}
+
+.box-mision .mision h3, .box-valores .mision h3 {
+  font-size: 25px;
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+.box-mision .mision p, .box-valores .mision p {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+}
+
+.box-vision .nosotras-3 {
+  padding: 25px;
+}
+
+.box-valores {
+  background-color: white;
+}
+
+.box-valores .valores {
+  margin: 25px;
+  width: 100%;
+}
+
+.box-valores .valores h3 {
+  font-size: 25px;
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+.box-valores .valores p {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.box-valores .nosotras-4 {
+  padding: 25px;
+}
+
+.p-items {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+@media (min-width: 575px) {
+  .box-conoceme, .box-vision, .box-mision, .box-valores,
+  .box-valores,
+  .box-vision {
+    display: -ms-grid;
+    display: grid;
+  }
+  .container-conoceme .logo-perfil {
+    display: -ms-grid;
+    display: grid;
+  }
+  .box-conoceme .nosotras-1, .box-vision .nosotras-1 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .box-mision .nosotras-2, .box-valores .nosotras-2 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .box-vision .nosotras-3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .box-valores .nosotras-4 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-conoceme, .box-vision, .box-mision, .box-valores,
+  .box-valores,
+  .box-vision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-conoceme .logo-perfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contacto__box .contactame__titulo {
+  font-family: "Koulen", cursive;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: solid black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+
+main .content .contactanos {
+  font-family: "Koulen", cursive;
+  text-align: center;
+  padding-top: 50px;
+  border-bottom: solid 1px black;
+}
+
+main .content .contact-form h2 {
+  font-family: "Koulen", cursive;
+  text-align: center;
+}
+
+main .content .contact-form h3 {
+  font-family: "Koulen", cursive;
+}
+
+main .content .contact-wrapper > * {
+  padding: 1rem;
+}
+
+main .content .contact-wrapper .contact-form {
+  background-color: #dddddb;
+  font-family: "Quicksand", sans-serif;
+}
+
+main .content .contact-wrapper .contact-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .content .contact-wrapper .contact-form form .block {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+main .content .contact-wrapper .contact-form form p {
+  margin: 0;
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+}
+
+main .content .contact-wrapper .contact-form form button,
+main .content .contact-wrapper .contact-form form input,
+main .content .contact-wrapper .contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: solid 0.5px #d89289;
+}
+
+main .content .contact-wrapper .contact-form form button {
+  background-color: #d89289;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+main .content .contact-wrapper .contact-form form button:hover,
+main .content .contact-wrapper .contact-form form button:focus {
+  background-color: #cc7d72;
+  color: #fff;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  outline: 0;
+}
+
+main .content .contact-wrapper .contact-info {
+  background-color: #222222;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+main .content .contact-wrapper .contact-info h4,
+main .content .contact-wrapper .contact-info ul,
+main .content .contact-wrapper .contact-info p {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+main .content .contact-wrapper .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+main .content .contact-wrapper .contact-info ul li {
+  padding: .3rem;
+}
+
+/*media tablet*/
+@media (max-width: 768px) {
+  .contact-wrapper .contact-form form .campo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+/*medida mobile*/
+@media (max-width: 575px) {
+  .contact-wrapper .contact-form form .campo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+}
+
+.container-turnos {
+  margin: 0 40px;
+  background-color: #ffffff;
+}
+
+.container-turnos .contenido-turno {
+  padding: 25px;
+}
+
+.container-turnos .contenido-turno p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 25px;
+}
+
+.container-turnos .medios-turnos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Koulen", cursive;
+  padding: 50px 0;
+  border-bottom: solid black 1px;
+}
+
+.ubicacion-mapa {
+  font-family: "Quicksand", sans-serif;
+}
+
+.ubicacion-mapa iframe {
+  width: 100%;
+}
+
+.saludo-final {
+  text-align: end;
+  font-weight: bold;
+}
+
+/**GLOBAL**/
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header .nav-logos, body header nav .navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 5px 15px;
+}
+
+body header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #d89289;
+}
+
+body .banner-page img {
+  width: 100%;
+}
+
+body main {
+  padding: 0 60px;
+  background-image: url(../img/peluqueria/geometrico6.png);
+}
+
+body main .titulo__nosotros, body main .div-servicios h2 {
+  text-align: center;
+  margin: 80px;
+  font-family: "Koulen", cursive;
+  border-bottom: solid 2px black;
+}
+
+body main .div-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .div-cont .texto-cont .p1 {
+  padding: 15px 25px 25px 25px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+body main .div-cont .texto-cont .h2-t {
+  padding: 25px 0px;
+  font-family: "Koulen", cursive;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+body main .div-servicios h2 {
+  margin: 45px 0;
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+}
+
+body main .div-servicios .descrip-serv {
+  font-family: "Quicksand", sans-serif;
+  padding: 0 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 1.3rem;
+}
+
+body main .div-servicios .servicios-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .div-servicios .servicios-cont img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+}
+
+body main .div-servicios .servicios-cont img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .div-servicios p {
+  text-align: center;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+body main .div-servicios h6 {
+  text-align: center;
+  color: white;
+  font-family: "Koulen", cursive;
+}
+
+body main .div-servicios .imagen-corte,
+body main .div-servicios .imagen-peinados,
+body main .div-servicios .imagen-color,
+body main .div-servicios .imagen-tratamientos {
+  background-color: #222222;
+}
+
+body main .div-servicios .separador-page img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+body main .container-galeria .h2-galeria {
+  margin: 45px 0;
+  border-bottom: 2px solid black;
+}
+
+body main .container-galeria .img-galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+body main .container-galeria .img-galeria img {
+  margin-top: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+}
+
+body main .container-galeria .img-galeria img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .marca-h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Koulen", cursive;
+  border-bottom: solid black 1px;
+  margin-top: 80px;
+}
+
+body main .marcas-tinturas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .marcas-tinturas .alparf-png,
+body main .marcas-tinturas .revlon-png,
+body main .marcas-tinturas .loreal-png,
+body main .marcas-tinturas .schwar-png,
+body main .marcas-tinturas .koleston-png,
+body main .marcas-tinturas .wella-png {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 200px;
+  padding: 0 25px;
+  margin-bottom: 60px;
+  margin-top: 45px;
+}
+
+footer {
+  background-color: #dddddb;
+}
+
+footer iframe {
+  width: auto;
+  height: auto;
+}
+
+/*media queries*/
+/*talet*/
+@media (max-width: 768px) {
+  .div-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+  }
+  .servicios-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .separador-page img {
+    width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imagenes.png {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    gap: 10px;
+  }
+}
+
+/*mobile*/
+@media (max-width: 576px) {
+  .alparf-png,
+  .revlon-png,
+  .loreal-png,
+  .schwar-png,
+  .koleston-png,
+  .wella-png {
+    width: 250px;
+    height: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagen-corte img,
+  .imagen-peinados img,
+  .imagen-color img,
+  .imagen-tratamientos img {
+    width: 100%;
+  }
+}

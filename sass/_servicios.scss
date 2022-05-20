@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    box-sizing: border-box;
+    main{
+        .titulo__servicios{
+            font-family: $fonttitulo;
+            margin: 50px;
+            text-align: center;
+            border-bottom: solid 1px black;
+        }
+        .parrafo-servicios{
+            font-family: $fontbody;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .card{
+            width: 100%;
+        }
+        .card-title{
+            font-family: $fonttitulo;
+            text-align: center;
+            font-size: 30px;
+            border-bottom: solid 1px black;
+        }
+        .card-text{
+            font-family: $fontbody;
+        }
+        .p-aclaracion{
+            font-size: 15px;
+            font-family: $fontbody;
+            padding-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.contacto__box{
+    .contactame__titulo{
+        @include titulo-container;
+    }
+    
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    .content{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5rem;
+        .contactanos{
+            font-family: $fonttitulo;
+            text-align: center;
+            padding-top: 50px;
+            border-bottom: solid 1px black;
+        }
+        .contact-form h2{
+            font-family: $fonttitulo;
+            text-align: center;
+        }
+        .contact-form h3{
+            font-family: $fonttitulo;
+        }
+        .contact-wrapper{
+            & > *{
+                padding: 1rem;
+            }
+            .contact-form{
+                background-color: map-get($map: $colores, $key: gris-claro);
+                font-family: $fontbody;
+                & form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                & form .block{
+                    grid-column: 1 / 3;
+                }
+                & form p{
+                    margin: 0;
+                    padding: 1em;
+                    font-family: $fontbody;
+                }
+                & form button,
+                & form input,
+                & form textarea{
+                    width: 100%;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    border-bottom: $border-bottom-pink;
+                }
+                & form button{
+                    background-color: map-get($map: $colores, $key: rosa-inter);
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+                }
+                & form button:hover,
+                & form button:focus{
+                    background-color: map-get($map: $colores, $key: rosa-fuerte);
+                    color: map-get($map: $colores, $key: blanco);
+                    transition: background-color 2s ease-out;
+                    outline: 0;
+                }
+            }
+            .contact-info{
+                background-color: rgb(34, 34, 34);
+                font-family: $fontbody;
+                color: white;
+                & h4,
+                & ul,
+                & p{
+                    text-align: center;
+                    margin: 0 0 1em 0;
+                }
+                & ul{
+                    list-style: none;
+                    padding: 0;
+                }
+                & ul li{
+                    padding: .3rem;
+                }
+            }
+        }
+    
+    }
+}
+
+
+/*media tablet*/
+@media (max-width: 768px){
+    .contact-wrapper{
+        .contact-form{
+            & form .campo{
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}
+/*medida mobile*/
+@media (max-width: 575px){
+    .contact-wrapper{
+        .contact-form{
+            & form .campo{
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}    
